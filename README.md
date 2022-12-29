@@ -1,7 +1,7 @@
-ebusd-configuration
-===================
+ebusd-configuration for wolf heiztechnik hardware
+=================================================
 
-This repository serves vendor specific configuration files for ebusd:
+This is a copy of the  repository serves vendor specific configuration files for ebusd:
 
 > https://github.com/john30/ebusd
 
@@ -10,6 +10,9 @@ This repository serves vendor specific configuration files for ebusd:
 provided here and you should definitely know what you're doing.
 
 **Otherwise: keep your hands off!!!**
+
+this is my working repo, i will commit to the upstream repo as soon it is ready for it
+
 
 
 Usage with ebusd version 3.2 or higher

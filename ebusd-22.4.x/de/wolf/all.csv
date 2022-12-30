@@ -4,6 +4,12 @@ b,,status_f-x,Betriebsdaten des Feuerungsautomaten an den Regler,,,0503,01,statu
 b,,soll_r-r,Sollwertuebertragung des Reglers an andere Regler,,,0800,,kesselsolltemp,,temp2,,,Kesselsollwert,aussentemp,,temp2,,,Außentemperatur,leistungszwang,,D1B,,%,Leistungszwang,status,,HEX,,,Status,brauchwassersolltemp,,temp2,,,Brauchwassersollwert,,,,,,,,,,,,
 b,,datetime,Datum/Uhrzeit,,,0700,,outsidetemp,,temp2,,,,time,,btime,,,,date,,bdate,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# 03xx service data default command set may not work with your system but try,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+*r,feuerung,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r,,count_anlauf,Anlaufzähler auslesen,,,0304,,count_x1,,UCH,,1,,count_x100,,UCH,,100,,count_x10000,,UCH,,10000,,,,,,,,,,,,,,,,,,,,,,,,,
+r,,hours_brenner1,Gesamt Betriebsstunden Brenner 1,,,0305,,minutes,,UCH,,min,,hours_x1,,UCH,,h,,hours_x100,,UCH,,100h,,hours_x10000,,UCH,,10000h,,,,,,,,,,,,,,,,,,,
+r,,count_fuel,Gesamt Brennstoffmengenzähler lesen,,,0308,,unit,,UCH,1=oil-liters; 2=gas-m3,,,count_x1,,UCH,,1,,count_x100,,UCH,,100,,count_x10000,,UCH,,10000,,count_x100000,,UCH,,100000,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # type (r;w;u;1-9),class,name,comment,QQ,ZZ,PBSB,ID,field1,part (m;s),type / templates,divider / values,unit,comment,field2,part (m;s),type / templates,divider / values,unit,comment,field3,part (m;s),type / templates,divider / values,unit,comment,field4,part (m;s),type / templates,divider / values,unit,comment,field5,part (m;s),type / templates,divider / values,unit,comment,field6,part (m;s),type / templates,divider / values,unit,comment,field7,part (m;s),type / templates,divider / values,unit,comment
 *w,feuerung,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
